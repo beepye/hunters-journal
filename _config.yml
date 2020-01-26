@@ -1,6 +1,6 @@
-title: With Bow and Barrel
+title: With Barrel and Bow
 logo:  # you can add own logo.
-description: Description goes here
+description: A Massachusetts sportsman's seasonal almanac of waterfowl and whitetail hunting logs
 baseurl: "/hunters-journal" # the subpath of your site, e.g. /blog
 url: "http://thebrianpye.com" # the base hostname & protocol for your site, e.g. http://example.com
 
@@ -8,11 +8,11 @@ url: "http://thebrianpye.com" # the base hostname & protocol for your site, e.g.
 # Contact links
 contact:
   - name: Twitter
-    link: https://twitter.com/
+    link: 
   - name: Facebook
-    link: https://facebook.com/
+    link: 
   - name: Instagram
-    link: https://instagram.com/
+    link: 
 
 
 # Comment Section (Disqus)
