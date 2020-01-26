@@ -1,24 +1,28 @@
-*, *::after, *::before {
+*, 
+*::after, 
+*::before {
   box-sizing: border-box;
 }
 
 body {
-  font-family: 'Lora', Georgia, Times, 'Times New Roman', serif;
-  font-size: 16px;
+  font-family: 'Fira Sans', sans-serif;
   color: $dark;
   background-color: #fff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
   input, textarea {
     border: 1px solid #f9f9f9;
     outline: none;
+
     &:focus:required:invalid {
       border-color: #e02f40;
     }
+
     &:required:valid {
       border-color: #34a74e;
     }
-    }
+  }
 }
 
 ::placeholder {
