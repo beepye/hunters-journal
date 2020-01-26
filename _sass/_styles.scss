@@ -1,6 +1,6 @@
 .hero {
 	position: relative;
-	background-image: url(#{{ site.baseurl }}/assets/img/hero-bg.jpg);
+	background-image: url($baseurl + "/assets/img/hero-bg.jpg");
 	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
