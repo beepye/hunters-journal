@@ -7,40 +7,7 @@ layout: default
 <div class="container">
   {% if site.posts.size > 0 %}
     <div class="row"> 
-      <div class="col-6">
-        <h2>Whitetail Entries</h2>
-        <ul>
-          {% for post in site.posts %}
-            {% if post.path contains 'whitetail' %}
-              <li>
-                <div class="article" data-aos="fade-up" data-aos-easing="ease-out-quad" data-aos-duration="800">
-                  <div class="article__content">
-                    <a href="{{ post.url | prepend: site.baseurl }}">
-                      <span class="article__date">
-                        <time datetime="{{ post.date | date_to_xmlschema }}">
-                        {% assign date_format = site.minima.date_format | default: "%B %-d, %Y" %}
-                        {{ post.date | date: date_format }}
-                        </time>
-                      </span>
-                      <span>{{ post.season }}</span>
-                    </a>
-
-                    <p class="article__excerpt">
-                      {% if post.description %}
-                        {{ post.description }}
-                      {% else %}
-                        {{ post.content | strip_html | truncate: 130 }}
-                      {% endif %}
-                    </p>
-                  </div>
-                </div>
-              </li>
-            {% endif %}
-          {% endfor %}
-        </ul>
-      </div>
-
-      <div class="col-6">
+      <div class="col-12 col-md-6">
         <h2>Waterfowl Entries</h2>
         <ul>
           {% for post in site.posts %}
@@ -71,7 +38,39 @@ layout: default
             {% endif %}
           {% endfor %}
         </ul>
-        
+      </div>
+      
+      <div class="col-12 col-md-6">
+        <h2>Whitetail Entries</h2>
+        <ul>
+          {% for post in site.posts %}
+            {% if post.path contains 'whitetail' %}
+              <li>
+                <div class="article" data-aos="fade-up" data-aos-easing="ease-out-quad" data-aos-duration="800">
+                  <div class="article__content">
+                    <a href="{{ post.url | prepend: site.baseurl }}">
+                      <span class="article__date">
+                        <time datetime="{{ post.date | date_to_xmlschema }}">
+                        {% assign date_format = site.minima.date_format | default: "%B %-d, %Y" %}
+                        {{ post.date | date: date_format }}
+                        </time>
+                      </span>
+                      <span>{{ post.season }}</span>
+                    </a>
+
+                    <p class="article__excerpt">
+                      {% if post.description %}
+                        {{ post.description }}
+                      {% else %}
+                        {{ post.content | strip_html | truncate: 130 }}
+                      {% endif %}
+                    </p>
+                  </div>
+                </div>
+              </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
       </div>
     </div>
     {% endif %}
