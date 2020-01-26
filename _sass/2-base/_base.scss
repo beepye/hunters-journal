@@ -107,7 +107,7 @@ img {
 
 a {
     text-decoration: none;
-    color: $primary-color;
+    color: $dark;
     transition: color 200ms;
 
     &:hover {
@@ -123,4 +123,8 @@ hr {
   border-radius: 50%;
   border: 0;
   background: $secondary-color;
+}
+
+li {
+  list-style-type: none;
 }
