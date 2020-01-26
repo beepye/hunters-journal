@@ -10,7 +10,7 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 	text-align: center;
-	height: 50vh;
+	height: 33vh;
 
 	&::after {
 		content: '';
@@ -53,5 +53,19 @@
 		line-height: 1.2;
 		color: #FFF;
 		z-index: 1;
+	}
+}
+
+@media (min-width: $tablet) {
+	.hero {
+		height: 50vh;
+
+		h1 {
+			font-size: 4rem;
+		}
+
+		p {
+			font-size: 1.6rem;
+		}
 	}
 }

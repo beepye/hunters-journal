@@ -64,7 +64,7 @@
 /* :: 4.4 Tag Page */
 @import '4-layouts/tag-page';
 
-// My custom styles
-$baseurl: {{ site.baseurl }};
 
-@import 'styles'
+/* ============== :: Custom Styles ============== */
+$baseurl: {{ site.baseurl }};
+@import 'custom'
