@@ -1,8 +1,8 @@
 title: With Bow and Barrel
 logo:  # you can add own logo.
 description: Description goes here
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/hunters-journal" # the subpath of your site, e.g. /blog
+url: "http://thebrianpye.com" # the base hostname & protocol for your site, e.g. http://example.com
 
 
 # Contact links
