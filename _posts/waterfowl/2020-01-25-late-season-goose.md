@@ -8,6 +8,7 @@ wind: E. 5-10mph
 low_temp: 39˚
 high_temp: 43˚
 location: Middleboro, MA
+forecast: Overcast
 coords: 41°51'40.5"N &nbsp; 70°47'47.2"W
 tags:   [waterfowl, late-season, goose, Weweantic River]
 ---

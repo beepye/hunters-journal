@@ -48,13 +48,10 @@
 }
 
 .article__hunt-data {
+  display: flex;
+  flex-wrap: wrap;
   font-size: .9rem;
-  color: $gray;
-  margin-top: .25rem;
-
-  i {
-    color: $wheat;
-  }
+  color: rgba($body-color, .6);
 }
 
 .article__content > a {

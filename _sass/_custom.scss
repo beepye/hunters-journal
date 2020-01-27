@@ -60,16 +60,26 @@
 	}
 }
 
+.hunt-data-icon  { 
+	margin-right: 8px;
+	color: $wheat; 
+}
+
+.hunt-data-block {
+  padding: 2px 10px;
+  white-space: nowrap;
+}
+
+@media (min-width: $small) {
+	.article__hunt-data { flex-direction: row; }
+}
+
 @media (min-width: $tablet) {
 	.hero {
 		height: 50vh;
 
-		h1 {
-			font-size: 4rem;
-		}
+		h1 { font-size: 4rem; }
 
-		p {
-			font-size: 1.6rem;
-		}
+		p { font-size: 1.6rem; }
 	}
 }

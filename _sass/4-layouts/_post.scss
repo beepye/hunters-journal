@@ -32,6 +32,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-color: $gray-white;
+
   &:after {
     content: '';
     display: table;
@@ -39,19 +40,25 @@
   }
 }
 
+.post__hunt-data {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  .hunt-data-block {
+    padding: 0 15px;
+  }
+}
+
 .post__content {
   margin-bottom: 45px;
+
   p {
     font-size: 18px;
     line-height: 32px;
     color: $gray;
-    img {
-      margin: 30px 0;
-    }
-  }
-  ul li,
-  ol li {
-    margin-bottom: 15px;
+
+    img { margin: 30px 0; }
   }
 }
 

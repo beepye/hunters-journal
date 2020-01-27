@@ -94,6 +94,7 @@ img {
   max-width: 100%;
   height: auto;
   vertical-align: middle;
+
   &+em {
     text-align: center;
     display: block;
@@ -106,13 +107,13 @@ img {
 }
 
 a {
-    text-decoration: none;
-    color: $dark;
-    transition: color 200ms;
+  text-decoration: none;
+  color: $dark;
+  transition: color 200ms;
 
-    &:hover {
-        color: $dark;
-    }
+  &:hover {
+      color: $dark;
+  }
 }
 
 hr {
@@ -125,6 +126,14 @@ hr {
   background: $secondary-color;
 }
 
+ul {
+  padding: 0;
+  margin: 0;
+}
+
 li {
   list-style-type: none;
 }
+ footer {
+  background-color: $gray-white;
+ }

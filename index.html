@@ -27,20 +27,32 @@ layout: default
 
                     {% if post.details == true %}
                     <div class="article__hunt-data">
-                      <span class="col-4"><i class="mr-2 far fa-clock"></i>{{ post.hunt_time }}</span>
-                      <span class="col-4"><i class="mr-2 fas fa-wind"></i>{{ post.wind }}</span>
-                      <span class="col-4"><i class="mr-2 fas fa-thermometer-three-quarters"></i>{{ post.low_temp }} - {{ post.high_temp }}</span>
-                    </div>
-
-                    <div class="article__hunt-data">
-                      <span class="col-6"><i class="mr-2 fas fa-map-marker-alt"></i>{{ post.location }}</span>
-                      <span class="col-6"><i class="mr-2 far fa-compass"></i>{{ post.coords }}</span>
+                      <span class="hunt-data-block">
+                        <i class="hunt-data-icon fas fa-map-marker-alt"></i>
+                        {{ post.location }}
+                      </span>
+                      <span class="hunt-data-block">
+                        <i class="hunt-data-icon far fa-clock"></i>
+                        {{ post.hunt_time }}
+                      </span>
+                      <span class="hunt-data-block">
+                        <i class="hunt-data-icon fas fa-thermometer-three-quarters"></i>
+                        {{ post.low_temp }}-{{ post.high_temp }}
+                      </span>
+                      <span class="hunt-data-block">
+                        <i class="hunt-data-icon fas fa-wind"></i>
+                        {{ post.wind }}
+                      </span>
+                      <!-- <span class="hunt-data-block">
+                        <i class="hunt-data-icon far fa-compass"></i>
+                        {{ post.coords }}
+                      </span> -->
                     </div>
                     {% else %}
 
-                    <div class="col-12">
-                      <span class="article__hunt-data d-flex">
-                        <i class="mr-2 mt-1 far fa-clipboard"></i>
+                    <div class="article__hunt-data">
+                      <span class="hunt-data-block">
+                        <i class="hunt-data-icon mt-1 far fa-clipboard"></i>
                         <span>
                           {% if post.description %}
                             {{ post.description }}
@@ -79,20 +91,32 @@ layout: default
 
                     {% if post.details == true %}
                     <div class="article__hunt-data">
-                      <span class="col-4"><i class="mr-2 far fa-clock"></i>{{ post.hunt_time }}</span>
-                      <span class="col-4"><i class="mr-2 fas fa-wind"></i>{{ post.wind }}</span>
-                      <span class="col-4"><i class="mr-2 fas fa-thermometer-three-quarters"></i>{{ post.low_temp }} - {{ post.high_temp }}</span>
-                    </div>
-
-                    <div class="article__hunt-data">
-                      <span class="col-6"><i class="mr-2 fas fa-map-marker-alt"></i>{{ post.location }}</span>
-                      <span class="col-6"><i class="mr-2 far fa-compass"></i>{{ post.coords }}</span>
+                      <span class="hunt-data-block">
+                        <i class="hunt-data-icon fas fa-map-marker-alt"></i>
+                        {{ post.location }}
+                      </span>
+                      <span class="hunt-data-block">
+                        <i class="hunt-data-icon far fa-clock"></i>
+                        {{ post.hunt_time }}
+                      </span>
+                      <span class="hunt-data-block">
+                        <i class="hunt-data-icon fas fa-thermometer-three-quarters"></i>
+                        {{ post.low_temp }}-{{ post.high_temp }}
+                      </span>
+                      <span class="hunt-data-block">
+                        <i class="hunt-data-icon fas fa-wind"></i>
+                        {{ post.wind }}
+                      </span>
+                      <!-- <span class="hunt-data-block">
+                        <i class="hunt-data-icon far fa-compass"></i>
+                        {{ post.coords }}
+                      </span> -->
                     </div>
                     {% else %}
 
-                    <div class="col-12">
-                      <span class="article__hunt-data d-flex">
-                        <i class="mr-2 mt-1 far fa-clipboard"></i>
+                    <div class="article__hunt-data">
+                      <span class="hunt-data-block d-flex text-wrap">
+                        <i class="hunt-data-icon mt-1 far fa-clipboard"></i>
                         <span>
                           {% if post.description %}
                             {{ post.description }}
