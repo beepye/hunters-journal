@@ -25,11 +25,13 @@
 
 .article__title {
   margin: 0;
+
   a {
     font-size: 30px;
     font-weight: 400;
     line-height: 38px;
     color: $gray;
+
     &:hover {
       color: $primary-color;
     }
@@ -45,19 +47,18 @@
   color: $gray-dark;
 }
 
-.article__excerpt {
-  margin-bottom: 15px;
+.article__hunt-data {
   font-size: .9rem;
   color: $gray;
+  margin-top: .25rem;
+
+  i {
+    color: $wheat;
+  }
 }
 
 .article__content > a {
   color: $body-color;
-}
-
-.article__hunt-data {
-  font-size: .9rem;
-  color: $gray;
 }
 
 .read-more {

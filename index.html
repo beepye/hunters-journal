@@ -25,26 +25,32 @@ layout: default
                       <span>{{ post.season }}</span>
                     </a>
 
-                   <div class="article__hunt-data">
-                     <span class="col-4">{{ post.hunt_time }}</span>
-                     <span class="col-4">{{ post.wind }}</span>
-                     <span class="col-4">{{ post.low_temp }} - {{ post.high_temp }}</span>
-                   </div>
+                    {% if post.details == true %}
+                    <div class="article__hunt-data">
+                      <span class="col-4"><i class="mr-2 far fa-clock"></i>{{ post.hunt_time }}</span>
+                      <span class="col-4"><i class="mr-2 fas fa-wind"></i>{{ post.wind }}</span>
+                      <span class="col-4"><i class="mr-2 fas fa-thermometer-three-quarters"></i>{{ post.low_temp }} - {{ post.high_temp }}</span>
+                    </div>
 
-                   <div class="article__hunt-data">
-                     <span class="col-6">{{ post.location }}</span>
-                     <span class="col-6">{{ post.coords }}</span>
-                   </div>
+                    <div class="article__hunt-data">
+                      <span class="col-6"><i class="mr-2 fas fa-map-marker-alt"></i>{{ post.location }}</span>
+                      <span class="col-6"><i class="mr-2 far fa-compass"></i>{{ post.coords }}</span>
+                    </div>
+                    {% else %}
 
                     <div class="col-12">
-                      <p class="article__excerpt">
-                        {% if post.description %}
-                          {{ post.description }}
-                        {% else %}
-                          {{ post.content | strip_html | truncate: 130 }}
-                        {% endif %}
-                      </p>
+                      <span class="article__hunt-data d-flex">
+                        <i class="mr-2 mt-1 far fa-clipboard"></i>
+                        <span>
+                          {% if post.description %}
+                            {{ post.description }}
+                          {% else %}
+                            {{ post.content | strip_html | truncate: 130 }}
+                          {% endif %}
+                        </span>
+                      </span> 
                     </div>
+                    {% endif %}
                   </div>
                 </div>
               </li>
@@ -71,13 +77,32 @@ layout: default
                       <span>{{ post.season }}</span>
                     </a>
 
-                    <p class="article__excerpt">
-                      {% if post.description %}
-                        {{ post.description }}
-                      {% else %}
-                        {{ post.content | strip_html | truncate: 130 }}
-                      {% endif %}
-                    </p>
+                    {% if post.details == true %}
+                    <div class="article__hunt-data">
+                      <span class="col-4"><i class="mr-2 far fa-clock"></i>{{ post.hunt_time }}</span>
+                      <span class="col-4"><i class="mr-2 fas fa-wind"></i>{{ post.wind }}</span>
+                      <span class="col-4"><i class="mr-2 fas fa-thermometer-three-quarters"></i>{{ post.low_temp }} - {{ post.high_temp }}</span>
+                    </div>
+
+                    <div class="article__hunt-data">
+                      <span class="col-6"><i class="mr-2 fas fa-map-marker-alt"></i>{{ post.location }}</span>
+                      <span class="col-6"><i class="mr-2 far fa-compass"></i>{{ post.coords }}</span>
+                    </div>
+                    {% else %}
+
+                    <div class="col-12">
+                      <span class="article__hunt-data d-flex">
+                        <i class="mr-2 mt-1 far fa-clipboard"></i>
+                        <span>
+                          {% if post.description %}
+                            {{ post.description }}
+                          {% else %}
+                            {{ post.content | strip_html | truncate: 130 }}
+                          {% endif %}
+                        </span>
+                      </span> 
+                    </div>
+                    {% endif %}
                   </div>
                 </div>
               </li>
