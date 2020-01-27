@@ -8,7 +8,7 @@ layout: default
   {% if site.posts.size > 0 %}
     <div class="row"> 
       <div class="col-12 col-md-6">
-        <h2 class="text-center">Waterfowl Entries</h2>
+        <h2 class="text-center">Waterfowl Logs</h2>
         <ul>
           {% for post in site.posts %}
             {% if post.path contains 'waterfowl' %}
@@ -25,13 +25,26 @@ layout: default
                       <span>{{ post.season }}</span>
                     </a>
 
-                    <p class="article__excerpt">
-                      {% if post.description %}
-                        {{ post.description }}
-                      {% else %}
-                        {{ post.content | strip_html | truncate: 130 }}
-                      {% endif %}
-                    </p>
+                   <div class="article__hunt-data">
+                     <span class="col-4">{{ post.hunt_time }}</span>
+                     <span class="col-4">{{ post.wind }}</span>
+                     <span class="col-4">{{ post.low_temp }} - {{ post.high_temp }}</span>
+                   </div>
+
+                   <div class="article__hunt-data">
+                     <span class="col-6">{{ post.location }}</span>
+                     <span class="col-6">{{ post.coords }}</span>
+                   </div>
+
+                    <div class="col-12">
+                      <p class="article__excerpt">
+                        {% if post.description %}
+                          {{ post.description }}
+                        {% else %}
+                          {{ post.content | strip_html | truncate: 130 }}
+                        {% endif %}
+                      </p>
+                    </div>
                   </div>
                 </div>
               </li>
@@ -41,7 +54,7 @@ layout: default
       </div>
       
       <div class="col-12 col-md-6">
-        <h2 class="text-center">Whitetail Entries</h2>
+        <h2 class="text-center">Whitetail Logs</h2>
         <ul>
           {% for post in site.posts %}
             {% if post.path contains 'whitetail' %}
