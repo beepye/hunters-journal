@@ -1,7 +1,7 @@
 title: With Barrel &amp; Bow
 logo:  # you can add own logo.
 description: A Massachusetts sportsman's seasonal logs of waterfowl and whitetail hunting
-baseurl: "/" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://www.withbarrelandbow.com" # the base hostname & protocol for your site, e.g. http://example.com
 
 
