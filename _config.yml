@@ -5,6 +5,13 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://www.withbarrelandbow.com" # the base hostname & protocol for your site, e.g. http://example.com
 
 
+# Author Settings
+author:
+  name: Brian Pye
+  image: '/assets/img/01.jpg'
+  bio: An outdoors enthusiast who likes to spend his time hiking, scouting, hunting, and fishing public lands.
+
+
 # Contact links
 contact:
   - name: Twitter
@@ -20,7 +27,7 @@ disqus-identifier: mr-brown # add your shortname for Disqus Comment. For example
 
 
 # Google Analytics
-google-analytics: # add your identifier. For example UA-99631805-1.
+google-analytics: UA-75341455-3
 
 
 # Build settings
