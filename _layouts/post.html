@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<div class="container container-restrain">
+<div class="container">
   <!-- begin post -->
   <article class="post">
     <div class="post__head" data-aos="fade-up" data-aos-easing="ease-out-quad" data-aos-duration="700">
@@ -15,35 +15,41 @@ layout: default
       {% endif %}
     </div>
 
-    <div class="post__hunt-data">
-      <span class="hunt-data-block">
-        <i class="hunt-data-icon fas fa-map-marker-alt"></i>
-        {{ page.location }}
-      </span>
-      <span class="hunt-data-block">
-        <i class="hunt-data-icon far fa-clock"></i>
-        {{ page.hunt_time }}
-      </span>
-      <span class="hunt-data-block">
-        <i class="hunt-data-icon fas fa-thermometer-empty"></i>
-        {{ page.low_temp }}
-      </span>
-      <span class="hunt-data-block">
-        <i class="hunt-data-icon fas fa-thermometer-three-quarters"></i>
-        {{ page.high_temp }}
-      </span>
-      <span class="hunt-data-block">
-        <i class="hunt-data-icon fas fa-wind"></i>
-        {{ page.wind }}
-      </span>
-      <span class="hunt-data-block">
-        <i class="hunt-data-icon fas fa-cloud"></i>
-        {{ page.forecast }}
-      </span>
-    </div>
+    <div class="row">
+      <section class="col-12 col-md-4">
+        <div class="post__hunt-data">
+          <span class="hunt-data-block">
+            <i class="hunt-data-icon fas fa-map-marker-alt"></i>
+            {{ page.location }}
+          </span>
+          <span class="hunt-data-block">
+            <i class="hunt-data-icon far fa-clock"></i>
+            {{ page.hunt_time }}
+          </span>
+          <span class="hunt-data-block">
+            <i class="hunt-data-icon fas fa-thermometer-empty"></i>
+            {{ page.low_temp }}
+          </span>
+          <span class="hunt-data-block">
+            <i class="hunt-data-icon fas fa-thermometer-three-quarters"></i>
+            {{ page.high_temp }}
+          </span>
+          <span class="hunt-data-block">
+            <i class="hunt-data-icon fas fa-wind"></i>
+            {{ page.wind }}
+          </span>
+          <span class="hunt-data-block">
+            <i class="hunt-data-icon fas fa-cloud"></i>
+            {{ page.forecast }}
+          </span>
+        </div>
+      </section>
 
-    <div class="post__content" data-aos="fade-up" data-aos-easing="ease-out-quad" data-aos-delay="100" data-aos-duration="700">
-      {{ content }}
+      <section class="col-12 col-md-8 order-md-first">
+        <div class="post__content" data-aos="fade-up" data-aos-easing="ease-out-quad" data-aos-delay="100" data-aos-duration="700">
+          {{ content }}
+        </div>
+      </section>
     </div>
 
     {% if page.tags.size >= 1 %}

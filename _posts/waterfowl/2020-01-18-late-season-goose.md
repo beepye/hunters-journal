@@ -9,7 +9,6 @@ low_temp: 19˚
 high_temp: 25˚
 location: Middleboro, MA
 forecast: Sunny
-coords: 41°51'40.5"N &nbsp; 70°47'47.2"W
 tags:   [waterfowl, late-season, goose, Weweantic River]
 ---
 
