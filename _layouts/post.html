@@ -16,37 +16,39 @@ layout: default
     </div>
 
     <div class="row">
-      <section class="col-12 col-md-4 pl-md-4 pl-lg-5">
-        <h3 class="d-none d-md-block m-0 mb-3 border-bottom">Local Conditions</h3>
-        <div class="post__hunt-data">
-          <span class="hunt-data-block">
-            <i class="hunt-data-icon fas fa-map-marker-alt"></i>
-            {{ page.location }}
-          </span>
-          <span class="hunt-data-block">
-            <i class="hunt-data-icon far fa-clock"></i>
-            {{ page.hunt_time }}
-          </span>
-          <span class="hunt-data-block">
-            <i class="hunt-data-icon fas fa-thermometer-empty"></i>
-            {{ page.low_temp }}
-          </span>
-          <span class="hunt-data-block">
-            <i class="hunt-data-icon fas fa-thermometer-three-quarters"></i>
-            {{ page.high_temp }}
-          </span>
-          <span class="hunt-data-block">
-            <i class="hunt-data-icon fas fa-wind"></i>
-            {{ page.wind }}
-          </span>
-          <span class="hunt-data-block">
-            <i class="hunt-data-icon fas fa-cloud"></i>
-            {{ page.forecast }}
-          </span>
+      <section class="col-12 col-md-4 offset-md-1 pl-md-4 pl-lg-5 mt-md-5">
+        <div class="sidebar">
+          <h3 class="d-none d-md-block m-0 mb-3 border-bottom">Local Conditions</h3>
+          <div class="post__hunt-data">
+            <span class="hunt-data-block">
+              <i class="hunt-data-icon fas fa-map-marker-alt"></i>
+              {{ page.location }}
+            </span>
+            <span class="hunt-data-block">
+              <i class="hunt-data-icon far fa-clock"></i>
+              {{ page.hunt_time }}
+            </span>
+            <span class="hunt-data-block">
+              <i class="hunt-data-icon fas fa-thermometer-empty"></i>
+              {{ page.low_temp }}
+            </span>
+            <span class="hunt-data-block">
+              <i class="hunt-data-icon fas fa-thermometer-three-quarters"></i>
+              {{ page.high_temp }}
+            </span>
+            <span class="hunt-data-block">
+              <i class="hunt-data-icon fas fa-wind"></i>
+              {{ page.wind }}
+            </span>
+            <span class="hunt-data-block">
+              <i class="hunt-data-icon fas fa-cloud"></i>
+              {{ page.forecast }}
+            </span>
+          </div>
         </div>
       </section>
 
-      <section class="col-12 col-md-8 order-md-first">
+      <section class="col-12 col-md-7 order-md-first">
         <div class="post__content" data-aos="fade-up" data-aos-easing="ease-out-quad" data-aos-delay="100" data-aos-duration="700">
           {{ content }}
         </div>
